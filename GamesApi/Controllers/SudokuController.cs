@@ -6,7 +6,7 @@ using Microsoft.Extensions.Logging;
 namespace GamesApi.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [EnableCors]
     public class SudokuController : ControllerBase
     {
@@ -17,7 +17,7 @@ namespace GamesApi.Controllers
             _logger = logger;
         }
 
-        [HttpGet]
+        [HttpGet(Name = "GetSudoku")]
         public ActionResult Test()
         {
             return new JsonResult("Here is a test, did it work?");
