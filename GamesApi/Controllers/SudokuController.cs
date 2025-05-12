@@ -18,9 +18,10 @@ namespace GamesApi.Controllers
         }
 
         [HttpGet(Name = "GetSudoku")]
-        public ActionResult Test()
+        public IEnumerable<string> Test()
         {
-            return new JsonResult("Here is a test, did it work?");
+            string[] testStrings = [ "Here is a test" ];
+            return testStrings;
         }
 
     }
