@@ -4,3 +4,8 @@ GET {{GamesApi_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###
+
+GET {{GamesApi_HostAddress}}/sudoku/
+Accept: application/json
+
+###
